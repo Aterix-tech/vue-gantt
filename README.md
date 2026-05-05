@@ -64,6 +64,14 @@ Many available options were either too heavy, broke during initial setup, were n
 
 ---
 
+## Online Preview
+
+**Vue Open Gantt** is live and available for you to explore. Experience the full interface and test the drag-and-drop functionality directly in your browser.
+
+🔗 **[Launch Vue Open Gantt](https://vue-gantt-kaui2nhm8-boss2236s-projects.vercel.app)**
+
+---
+
 ## Installation
 
 ```bash
