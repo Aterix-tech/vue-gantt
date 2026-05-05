@@ -8,7 +8,7 @@
 
 ## Why This Exists
 
-I built this because I struggled to find a Vue-based open-source Gantt or schedule tool that was simple, reliable, and easy to customize. 
+I built this because I struggled to find a Vue-based open-source Gantt or schedule tool that was simple, reliable, and easy to customize.
 
 Many available options were either too heavy, broke during initial setup, were not truly open-source, or were difficult to extend without fighting the underlying architecture. This project is my attempt to provide a clean, "developer-first" starting point for anyone who needs a Vue Gantt interface—without the frustration of battling complex tooling first.
 
@@ -20,22 +20,22 @@ Many available options were either too heavy, broke during initial setup, were n
 - **Multiple Calendar Views**: Support for Hour, Day, Week, Month, Quarter, and Year views.
 - **Persistent Grid**: A reliable calendar grid that remains visible even when no tasks are present.
 - **Task Management**: Create, edit, and delete tasks through an intuitive interface.
-- **Work-Time Tracking**: 
-    - Track **Planned** vs. **Actual** start and end date-times.
-    - Integrated **Start Work** and **End Work** workflow.
-    - **Automated Work Review**: Generates rule-based feedback (e.g., "Started on time, finished late") based on planned vs actual data.
-- **Interactive Timeline**: 
-    - Drag-and-drop to shift task dates.
-    - Horizontal resizing to change task duration.
-    - Snapping support (including 15-minute intervals in Hour view).
-- **Dependency Visualization**: 
-    - Render dependencies between tasks.
-    - Supports **Smoothstep**, **Step**, and **Straight** edge styles.
-    - Automatic dependency reconnection when deleting tasks in a chain.
+- **Work-Time Tracking**:
+  - Track **Planned** vs. **Actual** start and end date-times.
+  - Integrated **Start Work** and **End Work** workflow.
+  - **Automated Work Review**: Generates rule-based feedback (e.g., "Started on time, finished late") based on planned vs actual data.
+- **Interactive Timeline**:
+  - Drag-and-drop to shift task dates.
+  - Horizontal resizing to change task duration.
+  - Snapping support (including 15-minute intervals in Hour view).
+- **Dependency Visualization**:
+  - Render dependencies between tasks.
+  - Supports **Smoothstep**, **Step**, and **Straight** edge styles.
+  - Automatic dependency reconnection when deleting tasks in a chain.
 - **User Interface**:
-    - **Light & Dark Theme**: Automatic detection of system preference with manual toggle override.
-    - **Resizable Panes**: Built-in splitter to resize or collapse the task table and timeline.
-    - **Auto-Scroll**: Click a task in the sidebar to instantly navigate to its location on the timeline.
+  - **Light & Dark Theme**: Automatic detection of system preference with manual toggle override.
+  - **Resizable Panes**: Built-in splitter to resize or collapse the task table and timeline.
+  - **Auto-Scroll**: Click a task in the sidebar to instantly navigate to its location on the timeline.
 - **Professional Aesthetic**: Clean, neutral design using `#b4b4b4` (Light) and `#A9A9A9` (Dark) as the primary UI colors.
 
 ---
@@ -102,13 +102,16 @@ npm run build
 ## Usage Overview
 
 ### The Task Model
+
 Tasks are stored in a centralized Pinia store (`task.store.ts`). Each task includes:
+
 - `plannedStartDateTime` & `plannedEndDateTime`
 - `actualStartDateTime` & `actualEndDateTime`
 - `dependencies` (array of IDs)
 - `dependencyEdgeType` (`smoothstep`, `step`, or `straight`)
 
 ### Theme Management
+
 The app uses a `dark` class on the `<html>` element. It checks `prefers-color-scheme` on load but allows users to toggle manually via the `GanttToolbar`.
 
 ---
@@ -151,6 +154,7 @@ src/
 ## Contribution
 
 Contributions are welcome! This is a community foundation.
+
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
@@ -163,6 +167,7 @@ Contributions are welcome! This is a community foundation.
 
 - Designed for desktop-first interaction (drag/resize logic).
 - Performance may vary with thousands of simultaneous dependency lines (optimized for typical project loads).
+- the ghostsplitter is not working as expected, it is splitting the task in one way only, when it should be splitting in both ways.
 
 ---
 
@@ -174,7 +179,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Maintainer
 
-**Your Name / Organization** - [Your Website](https://yourwebsite.com)
+**muntasir mahmud** - [portfolio](https://tasir.qzz.io)
+**Aterix-tech** - [website](https://aterix.vercel.app)
 
 ---
 
