@@ -149,16 +149,6 @@ src/
 
 ---
 
-## Roadmap
-
-- [ ] Export to PDF / Image
-- [ ] Multi-assignee support
-- [ ] Task grouping and categories
-- [ ] Zoom level shortcuts
-- [ ] Localization (i18n)
-
----
-
 ## Contribution
 
 Contributions are welcome! This is a community foundation.
